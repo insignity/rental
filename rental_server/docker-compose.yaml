@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:14.1
+    ports:
+      - '8090:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: rental
+      POSTGRES_PASSWORD: "mfuiGDoUX_w5714irCIHlgCte82oq4iX"
+    volumes:
+      - rental_data:/var/lib/postgresql/data
+  redis:
+    image: redis:6.2.6
+    ports:
+      - '8091:6379'
+    command: redis-server --requirepass "M8CcbpKN8BMcoGFcHg6yo82TcbLrz8xP"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+volumes:
+  rental_data:
