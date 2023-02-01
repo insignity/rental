@@ -2,11 +2,12 @@
     "sqltools.connections": [
         {
             "previewLimit": 50,
-            "server": "localhost",
-            "port": 8090,
+            "server": "database.aiarsien.click",
+            "port": 5432,
+            "askForPassword": true,
             "driver": "PostgreSQL",
             "name": "rental",
-            "database": "rental",
+            "database": "serverpod",
             "username": "postgres"
         }
     ]

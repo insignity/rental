@@ -9,6 +9,7 @@
 import 'package:serverpod/serverpod.dart' as _i1;
 import '../endpoints/example_endpoint.dart' as _i2;
 import '../endpoints/user_endpoint.dart' as _i3;
+import 'package:rental_server/src/generated/user_class.dart' as _i4;
 
 class Endpoints extends _i1.EndpointDispatch {
   @override
@@ -60,7 +61,7 @@ class Endpoints extends _i1.EndpointDispatch {
           params: {
             'user': _i1.ParameterDescription(
               name: 'user',
-              type: _i1.getType<dynamic>(),
+              type: _i1.getType<_i4.User>(),
               nullable: false,
             )
           },
@@ -78,7 +79,7 @@ class Endpoints extends _i1.EndpointDispatch {
           params: {
             'user': _i1.ParameterDescription(
               name: 'user',
-              type: _i1.getType<dynamic>(),
+              type: _i1.getType<_i4.User>(),
               nullable: false,
             )
           },
@@ -105,7 +106,7 @@ class Endpoints extends _i1.EndpointDispatch {
           params: {
             'user': _i1.ParameterDescription(
               name: 'user',
-              type: _i1.getType<dynamic>(),
+              type: _i1.getType<_i4.User>(),
               nullable: false,
             )
           },

@@ -39,7 +39,6 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
             final _Loaded old = state as _Loaded;
             emit(const AuthState.loading());
             try {
-              await Future.delayed(const Duration(seconds: 1)); //TODO: REMOVE
               final response = await api.login(User(
                 login: old.login,
                 password: old.password,
