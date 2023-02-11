@@ -9,4 +9,6 @@ class AuthEvent with _$AuthEvent {
   const factory AuthEvent.onChangePassword(String text) = _OnChangePassword;
 
   const factory AuthEvent.login() = _Login;
+
+  const factory AuthEvent.register() = _Register;
 }

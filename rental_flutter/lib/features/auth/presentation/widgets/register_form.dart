@@ -1,3 +1,7 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:flutter/gestures.dart';
+
+import '../../../../routing/app_router.dart';
 import '/utils/utils.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +30,28 @@ class RegisterForm extends StatelessWidget {
                 Text("Password"),
                 WBox(200, child: TextField()),
               ],
+            ),
+            ElevatedButton(
+              onPressed: (){
+
+              },
+              child: Text("register"),
+            ),
+            RichText(
+              text: TextSpan(
+                text: "Already registered? ",
+                style: TextStyle(color: Colors.black),
+                children: [
+                  TextSpan(
+                    text: "Login",
+                    style: const TextStyle().copyWith(color: Colors.blue),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        context.router.replace(const LoginRoute());
+                      },
+                  ),
+                ],
+              ),
             ),
           ],
         ),

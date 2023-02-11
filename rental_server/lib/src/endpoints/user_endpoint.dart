@@ -20,6 +20,10 @@ class UserEndpoint extends Endpoint {
     }
   }
 
+  Future<void> register(Session session, User user) async {
+    await User.insert(session, user);
+  }
+
   Future<List<User>> readAll(Session session) async {
     final response = await User.find(session);
     return response;

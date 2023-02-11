@@ -45,6 +45,12 @@ class _EndpointUser extends _i1.EndpointRef {
         {'user': user},
       );
 
+  _i2.Future<void> register(_i3.User user) => caller.callServerEndpoint<void>(
+        'user',
+        'register',
+        {'user': user},
+      );
+
   _i2.Future<List<_i3.User>> readAll() =>
       caller.callServerEndpoint<List<_i3.User>>(
         'user',

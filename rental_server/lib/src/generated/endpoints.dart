@@ -92,6 +92,24 @@ class Endpoints extends _i1.EndpointDispatch {
             params['user'],
           ),
         ),
+        'register': _i1.MethodConnector(
+          name: 'register',
+          params: {
+            'user': _i1.ParameterDescription(
+              name: 'user',
+              type: _i1.getType<_i4.User>(),
+              nullable: false,
+            )
+          },
+          call: (
+            _i1.Session session,
+            Map<String, dynamic> params,
+          ) async =>
+              (endpoints['user'] as _i3.UserEndpoint).register(
+            session,
+            params['user'],
+          ),
+        ),
         'readAll': _i1.MethodConnector(
           name: 'readAll',
           params: {},

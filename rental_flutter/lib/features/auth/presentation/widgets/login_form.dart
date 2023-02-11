@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter/gestures.dart';
 import '/routing/app_router.dart';
 import '/utils/utils.dart';
 import 'package:flutter/material.dart';
@@ -79,6 +80,22 @@ class LoginForm extends StatelessWidget {
                           ? () => bloc.add(const AuthEvent.login())
                           : null,
                       child: Text("Login"),
+                    ),
+                    RichText(
+                      text: TextSpan(
+                        text: "don't have an account? ",
+                        style: TextStyle(color: Colors.black),
+                        children: [
+                          TextSpan(
+                            text: "register",
+                            style: const TextStyle().copyWith(color: Colors.blue),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                context.router.replace(const RegisterRoute());
+                              },
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),

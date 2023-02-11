@@ -53,6 +53,20 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
             }
           }
         },
+        register: () async {
+          if (state is _Loaded) {
+            final _Loaded old = state as _Loaded;
+            emit(const AuthState.loading());
+            try {
+              await api.register(
+                User(login: old.login, password: old.password),
+              );
+              emit(const _Success());
+            } catch (e) {
+              emit(_Error(message: e.toString()));
+            }
+          }
+        },
       );
     });
   }

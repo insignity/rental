@@ -22,6 +22,7 @@ mixin _$AuthEvent {
     required TResult Function(String text) onChangeLogin,
     required TResult Function(String text) onChangePassword,
     required TResult Function() login,
+    required TResult Function() register,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +31,7 @@ mixin _$AuthEvent {
     TResult? Function(String text)? onChangeLogin,
     TResult? Function(String text)? onChangePassword,
     TResult? Function()? login,
+    TResult? Function()? register,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +40,7 @@ mixin _$AuthEvent {
     TResult Function(String text)? onChangeLogin,
     TResult Function(String text)? onChangePassword,
     TResult Function()? login,
+    TResult Function()? register,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +50,7 @@ mixin _$AuthEvent {
     required TResult Function(_OnChangeLogin value) onChangeLogin,
     required TResult Function(_OnChangePassword value) onChangePassword,
     required TResult Function(_Login value) login,
+    required TResult Function(_Register value) register,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +59,7 @@ mixin _$AuthEvent {
     TResult? Function(_OnChangeLogin value)? onChangeLogin,
     TResult? Function(_OnChangePassword value)? onChangePassword,
     TResult? Function(_Login value)? login,
+    TResult? Function(_Register value)? register,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +68,7 @@ mixin _$AuthEvent {
     TResult Function(_OnChangeLogin value)? onChangeLogin,
     TResult Function(_OnChangePassword value)? onChangePassword,
     TResult Function(_Login value)? login,
+    TResult Function(_Register value)? register,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -125,6 +131,7 @@ class _$_Fetch implements _Fetch {
     required TResult Function(String text) onChangeLogin,
     required TResult Function(String text) onChangePassword,
     required TResult Function() login,
+    required TResult Function() register,
   }) {
     return fetch();
   }
@@ -136,6 +143,7 @@ class _$_Fetch implements _Fetch {
     TResult? Function(String text)? onChangeLogin,
     TResult? Function(String text)? onChangePassword,
     TResult? Function()? login,
+    TResult? Function()? register,
   }) {
     return fetch?.call();
   }
@@ -147,6 +155,7 @@ class _$_Fetch implements _Fetch {
     TResult Function(String text)? onChangeLogin,
     TResult Function(String text)? onChangePassword,
     TResult Function()? login,
+    TResult Function()? register,
     required TResult orElse(),
   }) {
     if (fetch != null) {
@@ -162,6 +171,7 @@ class _$_Fetch implements _Fetch {
     required TResult Function(_OnChangeLogin value) onChangeLogin,
     required TResult Function(_OnChangePassword value) onChangePassword,
     required TResult Function(_Login value) login,
+    required TResult Function(_Register value) register,
   }) {
     return fetch(this);
   }
@@ -173,6 +183,7 @@ class _$_Fetch implements _Fetch {
     TResult? Function(_OnChangeLogin value)? onChangeLogin,
     TResult? Function(_OnChangePassword value)? onChangePassword,
     TResult? Function(_Login value)? login,
+    TResult? Function(_Register value)? register,
   }) {
     return fetch?.call(this);
   }
@@ -184,6 +195,7 @@ class _$_Fetch implements _Fetch {
     TResult Function(_OnChangeLogin value)? onChangeLogin,
     TResult Function(_OnChangePassword value)? onChangePassword,
     TResult Function(_Login value)? login,
+    TResult Function(_Register value)? register,
     required TResult orElse(),
   }) {
     if (fetch != null) {
@@ -265,6 +277,7 @@ class _$_OnChangeLogin implements _OnChangeLogin {
     required TResult Function(String text) onChangeLogin,
     required TResult Function(String text) onChangePassword,
     required TResult Function() login,
+    required TResult Function() register,
   }) {
     return onChangeLogin(text);
   }
@@ -276,6 +289,7 @@ class _$_OnChangeLogin implements _OnChangeLogin {
     TResult? Function(String text)? onChangeLogin,
     TResult? Function(String text)? onChangePassword,
     TResult? Function()? login,
+    TResult? Function()? register,
   }) {
     return onChangeLogin?.call(text);
   }
@@ -287,6 +301,7 @@ class _$_OnChangeLogin implements _OnChangeLogin {
     TResult Function(String text)? onChangeLogin,
     TResult Function(String text)? onChangePassword,
     TResult Function()? login,
+    TResult Function()? register,
     required TResult orElse(),
   }) {
     if (onChangeLogin != null) {
@@ -302,6 +317,7 @@ class _$_OnChangeLogin implements _OnChangeLogin {
     required TResult Function(_OnChangeLogin value) onChangeLogin,
     required TResult Function(_OnChangePassword value) onChangePassword,
     required TResult Function(_Login value) login,
+    required TResult Function(_Register value) register,
   }) {
     return onChangeLogin(this);
   }
@@ -313,6 +329,7 @@ class _$_OnChangeLogin implements _OnChangeLogin {
     TResult? Function(_OnChangeLogin value)? onChangeLogin,
     TResult? Function(_OnChangePassword value)? onChangePassword,
     TResult? Function(_Login value)? login,
+    TResult? Function(_Register value)? register,
   }) {
     return onChangeLogin?.call(this);
   }
@@ -324,6 +341,7 @@ class _$_OnChangeLogin implements _OnChangeLogin {
     TResult Function(_OnChangeLogin value)? onChangeLogin,
     TResult Function(_OnChangePassword value)? onChangePassword,
     TResult Function(_Login value)? login,
+    TResult Function(_Register value)? register,
     required TResult orElse(),
   }) {
     if (onChangeLogin != null) {
@@ -410,6 +428,7 @@ class _$_OnChangePassword implements _OnChangePassword {
     required TResult Function(String text) onChangeLogin,
     required TResult Function(String text) onChangePassword,
     required TResult Function() login,
+    required TResult Function() register,
   }) {
     return onChangePassword(text);
   }
@@ -421,6 +440,7 @@ class _$_OnChangePassword implements _OnChangePassword {
     TResult? Function(String text)? onChangeLogin,
     TResult? Function(String text)? onChangePassword,
     TResult? Function()? login,
+    TResult? Function()? register,
   }) {
     return onChangePassword?.call(text);
   }
@@ -432,6 +452,7 @@ class _$_OnChangePassword implements _OnChangePassword {
     TResult Function(String text)? onChangeLogin,
     TResult Function(String text)? onChangePassword,
     TResult Function()? login,
+    TResult Function()? register,
     required TResult orElse(),
   }) {
     if (onChangePassword != null) {
@@ -447,6 +468,7 @@ class _$_OnChangePassword implements _OnChangePassword {
     required TResult Function(_OnChangeLogin value) onChangeLogin,
     required TResult Function(_OnChangePassword value) onChangePassword,
     required TResult Function(_Login value) login,
+    required TResult Function(_Register value) register,
   }) {
     return onChangePassword(this);
   }
@@ -458,6 +480,7 @@ class _$_OnChangePassword implements _OnChangePassword {
     TResult? Function(_OnChangeLogin value)? onChangeLogin,
     TResult? Function(_OnChangePassword value)? onChangePassword,
     TResult? Function(_Login value)? login,
+    TResult? Function(_Register value)? register,
   }) {
     return onChangePassword?.call(this);
   }
@@ -469,6 +492,7 @@ class _$_OnChangePassword implements _OnChangePassword {
     TResult Function(_OnChangeLogin value)? onChangeLogin,
     TResult Function(_OnChangePassword value)? onChangePassword,
     TResult Function(_Login value)? login,
+    TResult Function(_Register value)? register,
     required TResult orElse(),
   }) {
     if (onChangePassword != null) {
@@ -527,6 +551,7 @@ class _$_Login implements _Login {
     required TResult Function(String text) onChangeLogin,
     required TResult Function(String text) onChangePassword,
     required TResult Function() login,
+    required TResult Function() register,
   }) {
     return login();
   }
@@ -538,6 +563,7 @@ class _$_Login implements _Login {
     TResult? Function(String text)? onChangeLogin,
     TResult? Function(String text)? onChangePassword,
     TResult? Function()? login,
+    TResult? Function()? register,
   }) {
     return login?.call();
   }
@@ -549,6 +575,7 @@ class _$_Login implements _Login {
     TResult Function(String text)? onChangeLogin,
     TResult Function(String text)? onChangePassword,
     TResult Function()? login,
+    TResult Function()? register,
     required TResult orElse(),
   }) {
     if (login != null) {
@@ -564,6 +591,7 @@ class _$_Login implements _Login {
     required TResult Function(_OnChangeLogin value) onChangeLogin,
     required TResult Function(_OnChangePassword value) onChangePassword,
     required TResult Function(_Login value) login,
+    required TResult Function(_Register value) register,
   }) {
     return login(this);
   }
@@ -575,6 +603,7 @@ class _$_Login implements _Login {
     TResult? Function(_OnChangeLogin value)? onChangeLogin,
     TResult? Function(_OnChangePassword value)? onChangePassword,
     TResult? Function(_Login value)? login,
+    TResult? Function(_Register value)? register,
   }) {
     return login?.call(this);
   }
@@ -586,6 +615,7 @@ class _$_Login implements _Login {
     TResult Function(_OnChangeLogin value)? onChangeLogin,
     TResult Function(_OnChangePassword value)? onChangePassword,
     TResult Function(_Login value)? login,
+    TResult Function(_Register value)? register,
     required TResult orElse(),
   }) {
     if (login != null) {
@@ -597,6 +627,126 @@ class _$_Login implements _Login {
 
 abstract class _Login implements AuthEvent {
   const factory _Login() = _$_Login;
+}
+
+/// @nodoc
+abstract class _$$_RegisterCopyWith<$Res> {
+  factory _$$_RegisterCopyWith(
+          _$_Register value, $Res Function(_$_Register) then) =
+      __$$_RegisterCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_RegisterCopyWithImpl<$Res>
+    extends _$AuthEventCopyWithImpl<$Res, _$_Register>
+    implements _$$_RegisterCopyWith<$Res> {
+  __$$_RegisterCopyWithImpl(
+      _$_Register _value, $Res Function(_$_Register) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_Register implements _Register {
+  const _$_Register();
+
+  @override
+  String toString() {
+    return 'AuthEvent.register()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_Register);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() fetch,
+    required TResult Function(String text) onChangeLogin,
+    required TResult Function(String text) onChangePassword,
+    required TResult Function() login,
+    required TResult Function() register,
+  }) {
+    return register();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(String text)? onChangeLogin,
+    TResult? Function(String text)? onChangePassword,
+    TResult? Function()? login,
+    TResult? Function()? register,
+  }) {
+    return register?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? fetch,
+    TResult Function(String text)? onChangeLogin,
+    TResult Function(String text)? onChangePassword,
+    TResult Function()? login,
+    TResult Function()? register,
+    required TResult orElse(),
+  }) {
+    if (register != null) {
+      return register();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Fetch value) fetch,
+    required TResult Function(_OnChangeLogin value) onChangeLogin,
+    required TResult Function(_OnChangePassword value) onChangePassword,
+    required TResult Function(_Login value) login,
+    required TResult Function(_Register value) register,
+  }) {
+    return register(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Fetch value)? fetch,
+    TResult? Function(_OnChangeLogin value)? onChangeLogin,
+    TResult? Function(_OnChangePassword value)? onChangePassword,
+    TResult? Function(_Login value)? login,
+    TResult? Function(_Register value)? register,
+  }) {
+    return register?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Fetch value)? fetch,
+    TResult Function(_OnChangeLogin value)? onChangeLogin,
+    TResult Function(_OnChangePassword value)? onChangePassword,
+    TResult Function(_Login value)? login,
+    TResult Function(_Register value)? register,
+    required TResult orElse(),
+  }) {
+    if (register != null) {
+      return register(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Register implements AuthEvent {
+  const factory _Register() = _$_Register;
 }
 
 /// @nodoc

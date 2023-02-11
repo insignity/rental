@@ -3,6 +3,7 @@ example:
 user:
   - create:
   - login:
+  - register:
   - readAll:
   - update:
   - delete:
